@@ -1,12 +1,19 @@
-#include <stdio.h>
+# include <stdio.h>
+# include <stdlib.h>
+#include <string.h>
 
-void main () {
-    int i, num;
+void main()
+{
+   char string[10];
+   int tamanho;
 
-    for (i=1; i<=20; i++)
-        num= i%2;
+   printf ("Digite uma string:\n");
+   gets (string);
 
-        if (num%2 ==0)
-            printf ("Soma dos Numeros pares:\n %d\n",i);
+   tamanho = strlen(string);
+
+   printf("Quantidade de letras: %d",tamanho);
+   printf("\n");
+
 
 }
